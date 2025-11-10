@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Web lấy file</title>
+  <style>
+    body{
+        background-color: #37f38c;
+    }
+    :root{
+      --green-bg: #e8f5e9;
+      --red-btn: #ff3b30;
+      --red-btn-dark: #cc2f27;
+      --text-color: #043018;
+    }
+    html,body{height:100%;margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--green-bg);color:var(--text-color)}
+
+    /* Center container */
+    .wrap{
+      height:100%;display:flex;align-items:center;justify-content:center;padding:24px;box-sizing:border-box;
+    }
+
+    .col{display:flex;flex-direction:column;align-items:center;gap:18px}
+
+    /* Big red button */
+    .big-red-btn{
+      appearance:none; -webkit-appearance:none; border:none; outline:none;
+      background:var(--red-btn); color:#fff; font-weight:800;
+      padding:28px 48px; border-radius:12px; font-size:2.2rem; cursor:pointer;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+      transition:transform 180ms ease, box-shadow 180ms ease, background 180ms ease;
+    }
+    .big-red-btn:active{transform:translateY(2px)}
+    .big-red-btn:hover{background:var(--red-btn-dark);transform:translateY(-4px);box-shadow:0 18px 40px rgba(0,0,0,0.18)}
+
+    .note{font-size:1rem;color:rgba(0,0,0,0.7)}
+
+    @media (max-width:480px){
+      .big-red-btn{padding:20px 32px;font-size:1.6rem}
+    }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="col">
+      <a href="https://link4m.com/kBaUgO8j" class="big-red-btn" target="_blank">Nhấn vào để nhận file trên tik tok </a>
+      <div class="note">Mình bán khóa học chỉ kiếm cơm sống qua ngày mong các bạn ủng hộ ạ 😓😓😓</div>
+      <iframe width="703" height="396" src="https://www.youtube.com/embed/3v4O4mVWkX8" title="Hướng dẫn cách lấy MÃ trên Link4M, Link2M trên máy tính" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+</body>
+</html>
